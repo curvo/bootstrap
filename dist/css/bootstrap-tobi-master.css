@@ -1895,6 +1895,11 @@ fieldset[disabled] .btn-facebook.active {
   text-decoration: underline;
 }
 
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+  color: #fff;
+}
+
 .btn-facebook .fb-logo {
   text-transform: none;
 }
