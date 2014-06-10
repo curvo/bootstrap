@@ -2753,8 +2753,22 @@ fieldset[disabled] .btn-facebook.active {
 }
 
 .btn-facebook.disabled,
-.btn-facebook[disabled] {
+.btn-facebook[disabled],
+fieldset[disabled] .btn-facebook,
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled:active,
+.btn-facebook[disabled]:active,
+fieldset[disabled] .btn-facebook:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook.active {
   color: #fff;
+  background-color: #30487b;
 }
 
 .btn-facebook .fb-logo {
