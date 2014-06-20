@@ -100,6 +100,18 @@
 	&:hover {
 		text-decoration: underline;
 	}
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: darken(@btn-facebook-bg, 8%);
+      color: #fff;
+    }
+  }
 	.fb-logo {
 		text-transform: none;
 		&:before {
