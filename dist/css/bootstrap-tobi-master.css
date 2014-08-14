@@ -1,6 +1,6 @@
 /*!
 * Bootstrap v3.0.0 by @fat and @mdo
-* Copyright 2013 Twitter, Inc.
+* Copyright 2014 Twitter, Inc.
 * Licensed under http://www.apache.org/licenses/LICENSE-2.0
 *
 * Designed and built with all the love in the world by @mdo and @fat.
@@ -23,174 +23,6 @@
  * will be overwritten the next time bootstrap is built. To make changes to this
  * file, make them to the bootstrap repo, and follow the instructions in the README.
  */
-
-/*
-Font:       Proxima Nova
-Style:      Regular
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted
-            from using the WebFonts(s) listed without a purchased license.
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/proxima-nova-regular.eot");
-  src: url("/fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-regular.woff") format("woff"), url("/fonts/proxima-nova-regular.ttf") format("truetype"), url("/fonts/proxima-nova-regular.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova
-Style:      Regular Italic
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted
-            from using the WebFonts(s) listed without a purchased license.
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-Regular";
-  font-style: italic;
-  font-weight: normal;
-  src: url("/fonts/proxima-nova-regular-italic.eot");
-  src: url("/fonts/proxima-nova-regular-italic.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-regular-italic.woff") format("woff"), url("/fonts/proxima-nova-regular-italic.ttf") format("truetype"), url("/fonts/proxima-nova-regular-italic.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova
-Style:      Bold
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted
-            from using the WebFonts(s) listed without a purchased license.
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-Regular";
-  font-style: normal;
-  font-weight: bold;
-  src: url("/fonts/proxima-nova-bold.eot");
-  src: url("/fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-bold.woff") format("woff"), url("/fonts/proxima-nova-bold.ttf") format("truetype"), url("/fonts/proxima-nova-bold.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova Condensed
-Style:      Thin
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted
-            from using the WebFonts(s) listed without a purchased license.
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-Condensed";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/proxima-nova-condensed-thin.eot");
-  src: url("/fonts/proxima-nova-condensed-thin.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-condensed-thin.woff") format("woff"), url("/fonts/proxima-nova-condensed-thin.ttf") format("truetype"), url("/fonts/proxima-nova-condensed-thin.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova Condensed
-Style:      Thin Italic
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted
-            from using the WebFonts(s) listed without a purchased license.
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-Condensed";
-  font-style: italic;
-  font-weight: normal;
-  src: url("/fonts/proxima-nova-condensed-thin-italic.eot");
-  src: url("/fonts/proxima-nova-condensed-thin-italic.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-condensed-thin-italic.woff") format("woff"), url("/fonts/proxima-nova-condensed-thin-italic.ttf") format("truetype"), url("/fonts/proxima-nova-condensed-thin-italic.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova Extra Condensed
-Style:      Regular
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license 
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted 
-            from using the WebFonts(s) listed without a purchased license. 
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-ExtraCondensed";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/proxima-nova-extra-condensed-regular.eot");
-  src: url("/fonts/proxima-nova-extra-condensed-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-extra-condensed-regular.woff") format("woff"), url("/fonts/proxima-nova-extra-condensed-regular.ttf") format("truetype"), url("/fonts/proxima-nova-extra-condensed-regular.svg#ywftsvg") format("svg");
-}
-
-/*
-Font:       Proxima Nova Extra Condensed
-Style:      Semibold
-URL:        http://www.youworkforthem.com/product.php?sku=T0467
-Foundry:    Mark Simonson
-Foundry:    http://www.youworkforthem.com/designer/73/mark-simonson
-Copyright:  Copyright (c) Mark Simonson, 2005. All rights reserved.
-Version:    1.4
-Created:    October 01, 2013
-License:    http://www.youworkforthem.com/font-license 
-License:    The WebFont(s) listed in this document must follow the YouWorkForThem
-            WebFont license rules. All other parties are strictly restricted 
-            from using the WebFonts(s) listed without a purchased license. 
-            All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: "ProximaNova-ExtraCondensed";
-  font-style: normal;
-  font-weight: bold;
-  src: url("/fonts/proxima-nova-extra-condensed-semibold.eot");
-  src: url("/fonts/proxima-nova-extra-condensed-semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-extra-condensed-semibold.woff") format("woff"), url("/fonts/proxima-nova-extra-condensed-semibold.ttf") format("truetype"), url("/fonts/proxima-nova-extra-condensed-semibold.svg#ywftsvg") format("svg");
-}
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
@@ -2063,6 +1895,25 @@ fieldset[disabled] .btn-facebook.active {
   text-decoration: underline;
 }
 
+.btn-facebook.disabled,
+.btn-facebook[disabled],
+fieldset[disabled] .btn-facebook,
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled:active,
+.btn-facebook[disabled]:active,
+fieldset[disabled] .btn-facebook:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook.active {
+  color: #fff;
+  background-color: #30487b;
+}
+
 .btn-facebook .fb-logo {
   text-transform: none;
 }
@@ -2812,6 +2663,303 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 2;
 }
 
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e6e6e6;
+}
+
+.nav > li.disabled > a {
+  color: #cccccc;
+}
+
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #cccccc;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.nav .open > a {
+  text-decoration: none;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #e6e6e6;
+  border-color: #333333;
+}
+
+.nav .open > a .caret,
+.nav .open > a:hover .caret,
+.nav .open > a:focus .caret {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+}
+
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.nav > li > a > img {
+  max-width: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  color: #999999;
+  border: 1px solid transparent;
+  border-radius: 0 0 0 0;
+}
+
+.nav-tabs > li > a:hover {
+  color: #333333;
+  text-decoration: underline;
+  border-color: #e6e6e6 #e6e6e6 #dddddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #333333;
+  text-decoration: underline;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0 0 0 0;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+
+.nav-pills > li {
+  float: left;
+}
+
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.nav-pills > li.active > a .caret,
+.nav-pills > li.active > a:hover .caret,
+.nav-pills > li.active > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.nav-stacked > li {
+  float: none;
+}
+
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  float: none;
+}
+
+.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0 0 0 0;
+  }
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: " ";
+}
+
+.tabbable:after {
+  clear: both;
+}
+
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: " ";
+}
+
+.tabbable:after {
+  clear: both;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.nav .caret {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+
+.nav a:hover .caret {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
 .breadcrumb {
   padding: 0;
   margin: 0;
@@ -2852,6 +3000,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .breadcrumb > .active {
+  color: #333333;
+}
+
+.breadcrumb > .active > a {
   color: #333333;
 }
 
@@ -3403,6 +3555,216 @@ button.close {
   right: 5px;
   border-bottom-color: #ffffff;
   border-width: 0 5px 5px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+}
+
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .btn {
+  text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicons-chevron-left,
+  .carousel-control .glyphicons-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
 }
 
 .clearfix:before,
