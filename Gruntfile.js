@@ -160,6 +160,17 @@ module.exports = function (grunt) {
         src: 'less/bootstrap.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
+      compileTobiCore: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: '<%= pkg.name %>-tobi.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>-tobi.css.map'
+        },
+        src: 'less/bootstrap-tobi.less',
+        dest: 'dist/css/<%= pkg.name %>-tobi.css'
+      },
       compileTheme: {
         options: {
           strictMath: true,
@@ -283,6 +294,10 @@ module.exports = function (grunt) {
       docs: {
         src: 'dist/*/*',
         dest: 'docs/'
+      },
+      tobi: {
+        src: 'dist/css/<%= pkg.name %>-tobi.css',
+        dest: '../trunk/app/assets/stylesheets/plugin/bootstrap-<%= pkg.version %>-tobi.css'
       }
     },
 
@@ -469,4 +484,7 @@ module.exports = function (grunt) {
       done();
     });
   });
+
+  // TOBI tasks
+  grunt.registerTask('tobi', ['less:compileTobiCore', 'copy:tobi']);
 };
