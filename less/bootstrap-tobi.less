@@ -48,3 +48,38 @@
 // Utility classes
 @import "utilities.less";
 @import "responsive-utilities.less";
+
+//
+// Type
+// --------------------------------------------------
+
+// Common styles
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+//
+// Buttons
+// --------------------------------------------------
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  font-family: "ProximaNova-ExtraCondensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+
+  &:hover,
+  &.hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-default {
+  &:hover,
+  &.hover {
+    background-color: inherit;
+  }
+}

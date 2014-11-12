@@ -3302,4 +3302,39 @@ button.close {
     display: none !important;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  font-family: "ProximaNova-ExtraCondensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.btn-default:hover,
+.btn-primary:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-default.hover,
+.btn-primary.hover,
+.btn-success.hover,
+.btn-info.hover,
+.btn-warning.hover,
+.btn-danger.hover {
+  text-decoration: underline;
+}
+.btn-default:hover,
+.btn-default.hover {
+  background-color: inherit;
+}
 /*# sourceMappingURL=bootstrap-tobi.css.map */
