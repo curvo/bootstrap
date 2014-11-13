@@ -33,6 +33,8 @@ grunt tobi
 ```
 This will build our css and copy it over to trunk in the correct assets folder.
 
+---
+
 # [Bootstrap](http://getbootstrap.com)
 [![Bower version](https://badge.fury.io/bo/bootstrap.svg)](http://badge.fury.io/bo/bootstrap)
 [![NPM version](https://badge.fury.io/js/bootstrap.svg)](http://badge.fury.io/js/bootstrap)
