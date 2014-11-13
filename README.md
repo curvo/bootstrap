@@ -1,3 +1,38 @@
+# TOBI Theme
+
+At TOBI, we use a theme layered on top of the base bootstrap build. This allows us to easily upgrade bootstrap and actually maintain our fork.
+
+All custom styles are contained within:
+```
+less/
+├── theme-tobi.less
+```
+
+__Never edit the individual less components!__
+
+## Variables
+
+Variables can be customized by editing:
+```
+less/
+├── variables.less
+```
+
+Be sure to add a comment indicating a change from the defaults!
+```
+@some-variable: 'value'; // TOBI
+```
+
+__Do not add new variables here!__ So far we have not needed them but in the event that we do, create a new less file to hold new variables in and include them in the theme.
+
+## Grunt Tasks
+
+Convenient grunt tasks have been added to build our custom bootstrap theme.
+```
+grunt tobi
+```
+This will build our css and copy it over to trunk in the correct assets folder.
+
 # [Bootstrap](http://getbootstrap.com)
 [![Bower version](https://badge.fury.io/bo/bootstrap.svg)](http://badge.fury.io/bo/bootstrap)
 [![NPM version](https://badge.fury.io/js/bootstrap.svg)](http://badge.fury.io/js/bootstrap)
