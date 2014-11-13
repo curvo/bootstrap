@@ -4,13 +4,17 @@
 
 // Customized load of bootstrap less components
 @import "bootstrap-tobi.less";
+@import "grid-tobi.less";
 
 //
 // Type
 // --------------------------------------------------
 
 // Common styles
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  font-family: "ProximaNova-ExtraCondensed";
   text-transform: uppercase;
 }
 
@@ -18,13 +22,37 @@ h1, h2, h3, h4, h5, h6 {
 // Buttons
 // --------------------------------------------------
 
+// Custom button size mixin
+.tobi-button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: (@padding-vertical - 1) @padding-horizontal (@padding-vertical - 3);
+  font-size: @font-size;
+  line-height: @line-height;
+  border-radius: @border-radius;
+}
+
+.btn {
+  .tobi-button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-large; @line-height-base; @border-radius-base);
+}
+.btn-lg {
+  .tobi-button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-h4; @line-height-large; @border-radius-large);
+}
+.btn-sm {
+  .tobi-button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-base; @line-height-small; @border-radius-small);
+}
+.btn-xs {
+  .tobi-button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-base; @line-height-small; @border-radius-small);
+}
+
+.btn,
 .btn-default,
 .btn-primary,
 .btn-success,
 .btn-info,
 .btn-warning,
-.btn-danger {
-  font-family: "ProximaNova-ExtraCondensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.btn-danger,
+.btn-facebook,
+.btn-twitter {
+  font-family: "ProximaNova-ExtraCondensed";
   text-transform: uppercase;
 
   &:hover,
@@ -34,8 +62,174 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-default {
+  border-color: #666;
+
   &:hover,
   &.hover {
+    border-color: #000;
     background-color: inherit;
   }
+}
+
+@btn-facebook-color:             #fff;
+@btn-facebook-bg:                #3b5998;
+@btn-facebook-border:            darken(@btn-facebook-bg, 5%);
+
+.btn-facebook {
+  .button-variant(@btn-facebook-color; @btn-facebook-bg; @btn-facebook-border);
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: darken(@btn-facebook-bg, 8%);
+      color: #fff;
+    }
+  }
+  .fb-logo {
+    text-transform: none;
+    &:before {
+      content: 'f';
+      padding: 0 10px 0 0;
+    }
+    &:after {
+      content: '|';
+      padding: 0 10px 0 0;
+    }
+  }
+}
+
+@btn-twitter-color:              #fff;
+@btn-twitter-bg:                 #00aced;
+@btn-twitter-border:             darken(@btn-twitter-bg, 5%);
+
+.btn-twitter {
+  .button-variant(@btn-twitter-color; @btn-twitter-bg; @btn-twitter-border);
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+  font-family: "ProximaNova-ExtraCondensed";
+  font-size: @font-size-h3;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  > li {
+    color: @breadcrumb-color;
+
+    > a {
+      color: @breadcrumb-color;
+    }
+
+    &+li:before {
+      padding: 0 15px 0 20px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+//
+// Forms
+// --------------------------------------------------
+.form-control {
+  select& {
+    background: url('/images/triangle_expanded.gif') no-repeat top 7px right 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+
+    // Remove arrow in mozilla
+    text-indent: 0.01px;
+    text-overflow: "";
+  }
+
+  // Hide arrow in IE10
+  select&::-ms-expand {
+      display: none;
+  }
+}
+
+//
+// Alerts
+// --------------------------------------------------
+
+.alert {
+  margin: 0;
+  font-family: "ProximaNova-ExtraCondensed";
+  font-size: @font-size-h2;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+//
+// Modals
+// --------------------------------------------------
+
+.modal-dialog {
+  padding: 10px 0;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.modal-content {
+  width: 462px;
+  min-height: 200px;
+  margin: 126px auto 0 auto;
+  padding: 50px;
+  .box-shadow(none);
+}
+
+.modal-footer {
+  text-align: left;
+
+  // Links in the footer.
+  a {
+    color: #000;
+    border-bottom: 1px solid @gray-light;
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom-color: @link-hover-color;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+//
+// Utilities
+// --------------------------------------------------
+
+.divider {
+  // Mimics styling of the .page-header
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+.text-strike {
+	color: @text-muted;
+	text-decoration: line-through;
 }
