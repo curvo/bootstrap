@@ -1,4 +1,4 @@
-# TOBI Theme
+# TOBI Bootstrap
 
 At TOBI, we use a theme layered on top of the base bootstrap build. This allows us to easily upgrade bootstrap and actually maintain our fork.
 
@@ -15,38 +15,26 @@ less/
     - Custom grid
 ```
 
-__Never edit the default bootstrap less components!__ Always add style changes to the our theme.
+__Never edit the default bootstrap less components!__ Always add style changes to our theme instead.
 
 ## Variables
 
-Variables can be customized by editing:
-```
-less/
-├── variables.less
-```
+Variables can be customized by editing: `less/variables.less`
 
 Be sure to add a comment indicating a change from the defaults!
 ```
 @some-variable: 'value'; // TOBI
 ```
 
-Custom variables can be added to:
-```
-less/
-├── variables-tobi.less
-```
+New variables should be added to: `less/variables-tobi.less`
 
 ## Grunt Tasks
 
-Convenient grunt tasks have been added to build our custom bootstrap theme.
-```
-grunt tobi
-```
-This will build our css and copy it over to trunk in the correct assets folder.
+Simply run: `grunt tobi` in the terminal. This will build the theme and copy it over to trunk: `/trunk/app/assets/stylesheets/plugin/bootstrap-{version}-tobi.css`
 
----
+------------
 
-# [Bootstrap](http://getbootstrap.com)
+# Default [Bootstrap](http://getbootstrap.com) Docs
 [![Bower version](https://badge.fury.io/bo/bootstrap.svg)](http://badge.fury.io/bo/bootstrap)
 [![NPM version](https://badge.fury.io/js/bootstrap.svg)](http://badge.fury.io/js/bootstrap)
 [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.svg?branch=master)](https://travis-ci.org/twbs/bootstrap)
