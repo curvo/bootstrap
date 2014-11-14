@@ -2,10 +2,12 @@
 
 At TOBI, we use a theme layered on top of the base bootstrap build. This allows us to easily upgrade bootstrap and actually maintain our fork.
 
-All custom styles are contained within:
+The following files are what makes up our custom theme:
 ```
 less/
+├── bootstrap-tobi.less
 ├── theme-tobi.less
+├── grid-tobi.less
 ```
 
 __Never edit the individual less components!__
