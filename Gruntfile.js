@@ -174,10 +174,7 @@ module.exports = function (grunt) {
       compileTobiTheme: {
         options: {
           strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-tobi.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-tobi.css.map'
+          sourceMap: false
         },
         src: 'less/theme-tobi.less',
         dest: 'dist/css/<%= pkg.name %>-tobi.css'
