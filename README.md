@@ -6,8 +6,11 @@ The following files are what makes up our custom theme:
 ```
 less/
 ├── bootstrap-tobi.less
+    - Custom importing of bootstrap components
 ├── theme-tobi.less
+    - Changes to default styles on components
 ├── grid-tobi.less
+    - Custom grid
 ```
 
 __Never edit the individual less components!__
