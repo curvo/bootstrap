@@ -6,14 +6,16 @@ The following files are what makes up our custom theme:
 ```
 less/
 ├── bootstrap-tobi.less
-    - Custom importing of bootstrap components
+    - Custom build of bootstrap components
+├── variables-tobi.less
+    - Contains new variables
 ├── theme-tobi.less
     - Changes to default styles on components
 ├── grid-tobi.less
     - Custom grid
 ```
 
-__Never edit the default bootstrap less components!__
+__Never edit the default bootstrap less components!__ Always add style changes to the our theme.
 
 ## Variables
 
@@ -28,7 +30,11 @@ Be sure to add a comment indicating a change from the defaults!
 @some-variable: 'value'; // TOBI
 ```
 
-__Do not add new variables here!__ So far we have not needed them but in the event that we do, create a new less file to hold new variables in and include them in the theme.
+Custom variables can be added to:
+```
+less/
+├── variables-tobi.less
+```
 
 ## Grunt Tasks
 
