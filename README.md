@@ -13,7 +13,7 @@ less/
     - Custom grid
 ```
 
-__Never edit the individual less components!__
+__Never edit the default bootstrap less components!__
 
 ## Variables
 
